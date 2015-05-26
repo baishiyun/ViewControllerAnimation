@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "BSYAnimator.h"
+#import "BSYTransitionAnimator.h"
 @interface ViewController : UIViewController
 
-
+@property(nonatomic,strong)BSYAnimator *Animator;
+@property(nonatomic,strong)BSYTransitionAnimator *TransitionAnimator;
 @end
 

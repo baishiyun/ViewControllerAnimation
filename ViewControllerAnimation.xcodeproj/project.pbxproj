@@ -14,6 +14,9 @@
 		047106881B14686500ADEFFE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047106871B14686500ADEFFE /* Images.xcassets */; };
 		0471068B1B14686500ADEFFE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047106891B14686500ADEFFE /* LaunchScreen.xib */; };
 		047106971B14686500ADEFFE /* ViewControllerAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 047106961B14686500ADEFFE /* ViewControllerAnimationTests.m */; };
+		047106A51B14688100ADEFFE /* BSYAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 047106A21B14688100ADEFFE /* BSYAnimator.m */; };
+		047106A61B14688100ADEFFE /* BSYTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 047106A41B14688100ADEFFE /* BSYTransitionAnimator.m */; };
+		047106A91B146A2A00ADEFFE /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047106A81B146A2A00ADEFFE /* TwoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		047106901B14686500ADEFFE /* ViewControllerAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewControllerAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		047106951B14686500ADEFFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		047106961B14686500ADEFFE /* ViewControllerAnimationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerAnimationTests.m; sourceTree = "<group>"; };
+		047106A11B14688100ADEFFE /* BSYAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSYAnimator.h; sourceTree = "<group>"; };
+		047106A21B14688100ADEFFE /* BSYAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSYAnimator.m; sourceTree = "<group>"; };
+		047106A31B14688100ADEFFE /* BSYTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSYTransitionAnimator.h; sourceTree = "<group>"; };
+		047106A41B14688100ADEFFE /* BSYTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSYTransitionAnimator.m; sourceTree = "<group>"; };
+		047106A71B146A2A00ADEFFE /* TwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
+		047106A81B146A2A00ADEFFE /* TwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +72,7 @@
 		0471066E1B14686500ADEFFE = {
 			isa = PBXGroup;
 			children = (
+				047106A01B14687400ADEFFE /* Animation */,
 				047106791B14686500ADEFFE /* ViewControllerAnimation */,
 				047106931B14686500ADEFFE /* ViewControllerAnimationTests */,
 				047106781B14686500ADEFFE /* Products */,
@@ -85,6 +95,8 @@
 				0471067F1B14686500ADEFFE /* AppDelegate.m */,
 				047106811B14686500ADEFFE /* ViewController.h */,
 				047106821B14686500ADEFFE /* ViewController.m */,
+				047106A71B146A2A00ADEFFE /* TwoViewController.h */,
+				047106A81B146A2A00ADEFFE /* TwoViewController.m */,
 				047106841B14686500ADEFFE /* Main.storyboard */,
 				047106871B14686500ADEFFE /* Images.xcassets */,
 				047106891B14686500ADEFFE /* LaunchScreen.xib */,
@@ -117,6 +129,17 @@
 				047106951B14686500ADEFFE /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		047106A01B14687400ADEFFE /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				047106A11B14688100ADEFFE /* BSYAnimator.h */,
+				047106A21B14688100ADEFFE /* BSYAnimator.m */,
+				047106A31B14688100ADEFFE /* BSYTransitionAnimator.h */,
+				047106A41B14688100ADEFFE /* BSYTransitionAnimator.m */,
+			);
+			name = Animation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,7 +243,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				047106831B14686500ADEFFE /* ViewController.m in Sources */,
+				047106A51B14688100ADEFFE /* BSYAnimator.m in Sources */,
 				047106801B14686500ADEFFE /* AppDelegate.m in Sources */,
+				047106A91B146A2A00ADEFFE /* TwoViewController.m in Sources */,
+				047106A61B14688100ADEFFE /* BSYTransitionAnimator.m in Sources */,
 				0471067D1B14686500ADEFFE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
